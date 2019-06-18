@@ -15,8 +15,8 @@
 	<%="Utilizando a expressão de saída e otimizando codigo"%>
 
 	<form action="pageName.jsp">
-		<label for="paramiter">Name</label> <input type="text" id="paramiter"
-			name="name">
+		<label for="paramiter">Name</label> 
+		<input type="text" id="paramiter" name="name">
 		<button type="submit">Send</button>
 		<button type="reset">Clear</button>
 	</form>
@@ -24,9 +24,10 @@
 	<br>
 	<br>
 	
-	<p>Declarando Variaveis, Classes e Metodos</p>
+	<p>Declaração de Variaveis, Classes e Métodos</p>
 	<form action=".">
-		<label for number>Type number</label> <input type="text" name="number">
+		<label for="number">Type number</label> 
+		<input type="text" name="number">
 		<button type="submit">Is Pair</button>
 	</form>
 	<% String number = request.getParameter("number") != null 
@@ -36,7 +37,9 @@
 	<%!
 		public String isPair(String n) {
 			try{
-				return (Integer.parseInt(n)%2) == 0 ? " It's number is pair":" It's number not pair";
+				return (Integer.parseInt(n)%2) == 0 
+						? " It's number is pair"
+						:" It's number not pair";
 			}catch (NumberFormatException e){
 				return " It's not number valid!";
 			}
